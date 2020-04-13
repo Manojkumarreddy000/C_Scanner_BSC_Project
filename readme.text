@@ -1,0 +1,132 @@
+# Documentation for "C Scanner and Parser" project
+#
+# Authors:
+#			P Manoj Kumar Reddy		133226
+#			A Ranga Shaarad			133221
+***************************************************
+********************Title***************************
+
+			C Scanner and Parser
+
+
+***************Project description******************
+	C Scanner and Parser is a program which implements a few parts
+of the C compiler.
+
+	It takes as input a file containing source code of a C program.
+
+	It gives output in various files and also the screen as described below.
+
+
+->	The preprocessor removes comments from the source code and stores
+multi line comments and single line comments in 2 separate files given below.
+
+->	It also substitutes macros and displays relevant error messages if the
+definition of the macro is syntactically incorrect.
+
+->	It also recognises and substitutes macros with as many as ARG_NUM arguments,
+where ARG_NUM is a constant defined in the header file.
+
+->	The next stage of the program is a lexical analyser or scanner.
+It separates the input source code into tokens and stores it in a new file
+ending with .o
+
+-> The next stage of the program prints the code in various C constructs into
+different files such as "If.txt","For.txt","While.txt"
+
+-> The next stage identifies the variables declared in the program and prints
+the storage class, qualifier, data type and the identifier in a file "Variables.txt".
+
+-> The next stage identifies the various functions declared and defined in the file
+and prints it in a file "Functions.txt"
+
+-> The next stage identifies the function call hierarchy and prints it on the screen
+that part of the hierarchy which does not form a cycle
+
+
+*******************Project files*********************
+
+Main file : test.c
+
+Data files	:
+			Keywords.dat				# Contains all valid keywords
+			Datatypes.dat				# Contains valid data types
+
+Header    : header.h
+
+Function files : 
+			functions_shaarad.c
+			functions_manoj.c
+
+Test input:
+			input.c
+
+Output files :
+			test.out                    # Output executable
+			input.o						# File containing the tokens
+			Single line comments.txt	# Contains all single line comments
+			Multi line comments.txt		# Contains all multi line comments
+			Macros.txt					# Contains all macros which are found in the file
+			If.txt						# Contains the 'if' blocks
+			While.txt					# Contains the 'while' blocks
+			For.txt						# Contains the 'for' blocks
+			Function.txt				# Contains the function prototypes
+			Variables.txt				# Contains the list of variables declared in the file 
+										#          along with the data types and storage classes
+										
+Make file : 
+			Makefile
+
+
+**********************Usage*****************************
+			make
+			./test.out input.c
+
+"input.c" is the name of the C source code file which is to be scanned and parsed by the program
+
+The output of the program is in files listed under output files
+The function hierarchy is displayed on the screen
+
+************Limitations and Future works***************************
+	The preprocessor and be extended to include other files as well which may contain function
+declarations and definitions. Also, standard header files can be included so that even standard 
+functions are displayed in the function hierarchy.
+
+	The preprocessor can also be extended to process "typedef" and "enum" uses so that variables of user defined 
+data types can be recognised.
+
+	Variables of stucture types also can be recognised.
+
+	The "do-while" and "switch-case" constructs also can be taken care of along with the other constructs.
+
+	This project can be taken to the next stage by using the output of the scanner to build a parse tree 
+which further can be processed to create machine code.
+
+	The output of the scanner can also be stored more intelligently by categorising each token and storing the information
+so that parsing becomes more efficient and easy.
+
+*****************References*****************************
+
+	The theory and practice of compiler writing
+				Tremblay and Sorenson
+
+	Switching and Finite State Machines
+				Zvi Kohavi
+
+******************Acknowkedgements**********************
+	We would firstly like to thank our most beloved Swami, because of whom we were able to do what ever we did.
+	
+	We would also like to thank Director Rangarajan sir, for his support and encouragement.
+
+	We would also like to thank Darshan sir, who patiently encouraged and prodded us to learn C and do this project.
+
+	We thank the Department of Mathematics and Computer Science (DMACS) of the University for providing us this 
+oppurtunity to do this project.
+
+	We thank Subramanian sir and Venkata Sai Aditya sir for their continuous support and encouragement.
+
+	We express our gratitude to the alumni of our University, especially Naveen brother, Sai Kumar brother and
+Sravan brother who always were ready to give timely advice and help, taking time out from their busy schedule to guide us.
+
+	We thank the Computer Centre staff, especially Sathyanarayanan sir and Shiv Shankar sir for the infrastructure and also
+their support and patience.
