@@ -21,10 +21,10 @@ of the C compiler.
 ->	The preprocessor removes comments from the source code and stores
 multi line comments and single line comments in 2 separate files given below.
 
-->	It also substitutes macros and displays relevant error messages if the
+->	It substitutes macros and displays relevant error messages if the
 definition of the macro is syntactically incorrect.
 
-->	It also recognises and substitutes macros with as many as ARG_NUM arguments,
+->	It recognises and substitutes macros with as many as ARG_NUM arguments,
 where ARG_NUM is a constant defined in the header file.
 
 ->	The next stage of the program is a lexical analyser or scanner.
@@ -88,7 +88,7 @@ The output of the program is in files listed under output files
 The function hierarchy is displayed on the screen
 
 ************Limitations and Future works***************************
-	The preprocessor and be extended to include other files as well which may contain function
+	The preprocessor can be extended to include other files as well which may contain function
 declarations and definitions. Also, standard header files can be included so that even standard 
 functions are displayed in the function hierarchy.
 
@@ -114,19 +114,19 @@ so that parsing becomes more efficient and easy.
 				Zvi Kohavi
 
 ******************Acknowkedgements**********************
-	We would firstly like to thank our most beloved Swami, because of whom we were able to do what ever we did.
+	We would firstly like to thank our most beloved Swami Sri Sathya Sai Baba, because of whom we were able to do what ever we did.
 	
-	We would also like to thank Director Rangarajan sir, for his support and encouragement.
+	We would also like to thank Director Rangarajan sir(Sri Sathya Sai Institute of Higher Learning, Banglore), for his support and encouragement.
 
 	We would also like to thank Darshan sir, who patiently encouraged and prodded us to learn C and do this project.
 
-	We thank the Department of Mathematics and Computer Science (DMACS) of the University for providing us this 
+	We thank the Department of Mathematics and Computer Science (DMACS) of the University(Sri Sathya Sai Institute of Higher Learning, Banglore) for providing us this 
 oppurtunity to do this project.
 
 	We thank Subramanian sir and Venkata Sai Aditya sir for their continuous support and encouragement.
 
-	We express our gratitude to the alumni of our University, especially Naveen brother, Sai Kumar brother and
-Sravan brother who always were ready to give timely advice and help, taking time out from their busy schedule to guide us.
+	We express our gratitude to the alumni of our University, especially Naveen brother(From IBM Banglore), Sai Kumar(GE Healthcare) brother and
+Sravan(IBM) brother who always were ready to give timely advice and help, taking time out from their busy schedule to guide us.
 
 	We thank the Computer Centre staff, especially Sathyanarayanan sir and Shiv Shankar sir for the infrastructure and also
 their support and patience.
